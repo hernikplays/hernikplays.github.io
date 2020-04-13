@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>404 - Not found</title>
+    <meta name="author" content="hernikplays">
+    <meta name="description" content="Looks like this content does not exist on this server">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            min-height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            height: calc(100vh - 8em);
+            color: rgba(255, 255, 255, .75);
+            font-family: 'Roboto Mono', monospace;
+            background-color: rgb(20, 20, 20);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 120px;
+            margin: 80px;
+        }
+
+        p{
+            font-size:30px;
+            margin-bottom: -20px;
+        }
+
+        .notfound{
+            margin-top: -80px;
+            margin-bottom: -10px;
+            font-size: 50px;
+        }
+
+        a{
+            color: rgba(255, 255, 255, .75);
+        }
+
+        .blinking-cursor {
+            /* Thanks to https://codepen.io/ArtemGordinsky/pen/GnLBq */
+            font-family: 'Roboto Mono', monospace;
+            font-size: 100px;
+            color: rgba(255, 255, 255, .75);
+            -webkit-animation: 1s blink step-end infinite;
+            -moz-animation: 1s blink step-end infinite;
+            -ms-animation: 1s blink step-end infinite;
+            -o-animation: 1s blink step-end infinite;
+            animation: 1s blink step-end infinite;
+        }
+
+        @keyframes "blink" {
+
+            from,
+            to {
+                color: transparent;
+            }
+
+            50% {
+                color: rgba(255, 255, 255, .75);
+            }
+        }
+
+        @-moz-keyframes blink {
+
+            from,
+            to {
+                color: transparent;
+            }
+
+            50% {
+                color: rgba(255, 255, 255, .75);
+            }
+        }
+
+        @-webkit-keyframes "blink" {
+
+            from,
+            to {
+                color: transparent;
+            }
+
+            50% {
+                color: rgba(255, 255, 255, .75);
+            }
+        }
+
+        @-ms-keyframes "blink" {
+
+            from,
+            to {
+                color: transparent;
+            }
+
+            50% {
+                color: rgba(255, 255, 255, .75);
+            }
+        }
+
+        @-o-keyframes "blink" {
+
+            from,
+            to {
+                color: transparent;
+            }
+
+            50% {
+                color: rgba(255, 255, 255, .75);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="four" style="visibility: hidden;">4<span class="blinking-cursor">_</span></h1>
+</div>
+            <script>
+                setTimeout(function () {
+                    document.getElementById("four").style.visibility = "visible"; 
+                    setTimeout(function () {
+                        document.getElementById("four").innerHTML =
+                            '40<span class="blinking-cursor">_</span>';
+                        setTimeout(function () {
+                            document.getElementById("four").innerHTML =
+                                '404<span class="blinking-cursor">_</span>';
+                        }, 700);
+                    }, 700);
+                }, 700);
+            </script>
+            <noscript>
+                <h1>404<span class="blinking-cursor">_</span></h1>
+            </noscript>
+            <p class="notfound">Content not found</p>
+            <p>The thing you were looking for is no longer here or never was.</p>
+            <p>Click <a href="/">here</a> to go back to the homepage</p>
+</body>
+
+</html>
