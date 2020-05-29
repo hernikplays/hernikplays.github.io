@@ -1,46 +1,60 @@
-html,body {
+html,
+body {
     background-color: #171717;
     height: 100%;
     margin: 0;
     color: white;
     font-family: 'Ubuntu Mono', monospace;
     font-size: 20px;
-    padding:0;
+    padding: 0;
     text-align: center;
 }
 
-h1{
+h1 {
     margin-bottom: -25px;
     font-size: 50px;
 }
 
-.lp{
-    width:50px;
-    height:50px;
+.lp {
+    width: 50px;
+    height: 50px;
 }
 
-.lp path{
-    fill:white;
-    
+.lp path {
+    fill: white;
+
 }
 
-.lessmarg{
+.lessmarg {
     margin-right: 8px;
 }
 
 .center {
     width: 500px;
-        height: 600px;
-        position:absolute; 
-        left:0; right:0;
-        top:0; bottom:0;
-        margin:auto;
-        max-width:100%;
-        max-height:100%;
-        overflow:auto;
-  }
+    height: 600px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+}
 
+#notif {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #383838;
+    border-radius: 4px;
+    width: 20%;
+}
 
+a{
+    color:lightblue;
+}
 
 /* Hover.css - Author: Ian Lunn @IanLunn */
 .hvr-grow {
@@ -53,8 +67,11 @@ h1{
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
-  }
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
+}
