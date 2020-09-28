@@ -51,6 +51,7 @@ h1 {
     background-color: #383838;
     border-radius: 4px;
     width: 20%;
+    font-size: 15px;
 }
 
 a{
@@ -133,3 +134,4 @@ a{
         display: table;
       } 
   }
+  

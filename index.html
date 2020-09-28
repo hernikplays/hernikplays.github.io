@@ -29,6 +29,9 @@
     <!--
     WEBSITE BY HERNIKPLAYS, CODE/STYLESHEETS LICENSED UNDER GPLv3 LICENSE
   -->
+    <div id="notif">
+      <p>I'm selling the following domains:<br><b>shadowportal.eu ($25)</b><br><b>akaineko.xyz ($30)</b><br><b>emudb.xyz ($20)</b><br>If interested, contact me at <a href="https://ocarina.hernikplays.cz" id="mail">Ocarina</a></p>
+    </div>
   <div class="header center">
     <img src="./assets/img/logo.png" width="200px">
     <noscript>PLEASE ENABLE JAVASCRIPT FOR THIS WEBSITE TO FUNCTION PROPERLY!</noscript>
@@ -55,11 +58,15 @@
   
   <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
   <script>
-    var string1 = "mailto:contact";
+    var string0 = "mailto:"
+    var string1 = "contact";
     var string2 = "@";
     var string3 = "hernikplays.cz";
-    var string4 = string1 + string2 + string3;
+    var string4 = string0 + string1 + string2 + string3;
     document.getElementsByClassName("email")[0].href = string4;
+    let ch = document.getElementById("mail")
+    ch.href=string4
+    ch.innerText=string1 + string2 + string3
   </script>
 </body>
 
