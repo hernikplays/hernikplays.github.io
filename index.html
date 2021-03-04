@@ -1,12 +1,15 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-  <title>hernikplays</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hernik</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/75b82a4eb6.js" crossorigin="anonymous"></script>
 
-  <!-- Meta Data -->
-  <meta name="author" content="hernikplays">
+    <meta name="author" content="hernikplays">
   <meta name="description" content="Portfolio website of Hernikplays">
   <meta name="keywords" content="hernikplays,hernik,dev,czech">
   <link rel="shortcut icon" href="../assets/img/logonotext.png" type="image/png">
@@ -21,91 +24,31 @@
   <meta name="twitter:title" content="Hernikplays">
   <meta name="twitter:description" content="Hernikplays' portfolio, here you can find info about my projects etc.">
   <meta name="twitter:image" content="https://hernikplays.cz/assets/img/logonotext.png">
-
-  <!-- CSS -->
-  <link href="https://modesta.alexflipnote.dev/css/modesta.css" type="text/css" rel="stylesheet">
-  <link href="assets/css/custom.css" type="text/css" rel="stylesheet">
-
-  <!-- JavaScript -->
-  <script src="assets/js/main.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
-<body class="github-font-standard">
-  <div class="fullscreen">
-    <div class="background" style="background-image: url('./assets/img/sea.jpg');"></div>
-    <div class="center-object">
-      <div class="container">
-        <section class="me unset">
-          <div class="avatar-container">
-            <img draggable="false" src="./assets/img/logonotext.png" class="image-title">
-          </div>
-          <div class="unset">
-            <h1 class="title monospace">hernik</h1>
-            <p class="undertitle monospace"><i class="emoji norway"></i> Back-end/Software developer</p>
-          </div>
-        </section>
-        <div class="buttons">
-          <a href="https://github.com/hernikplays" class="btn github-dropshadow animation hover"
-            target="_blank">GitHub</a>
-          <a href="https://twitter.com/hernikplays" class="btn twitter-dropshadow animation hover"
-            target="_blank">Twitter</a>
-          <a href="" id="mail" class="btn emerald-dropshadow animation hover">Email</a>
-          <a href="https://undreamit.games" class="btn alizarin-dropshadow animation hover"
-            target="_blank">undreamit</a>
+<body>
+    <section class="hero is-fullheight has-text-centered">
+        <div class="hero-body has-text-centered hiro">
+            <div class="container has-text-centered">
+                <p class="title">
+                    Hernik
+                </p>
+                <p class="subtitle">
+                    Czech software developer
+                </p>
+                <div class="buttons is-centered">
+                    <a href="https://github.com/hernikplays"><button class="button is-info"><span style="font-size: 22px; margin-right: 5px;"><i class="fab fa-github"></i></span>GitHub</button></a>
+                    <a id="mail"><button class="button is-success"><span style="font-size: 22px; margin-right: 5px;"><i class="fas fa-envelope"></i></span>Contact me</button></a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <span class="info-button" onclick="scroll_to('information')">
-      <div id="fade" class="arrow bounce">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.32 291.98" class="white-fill">
-          <path
-            d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z" />
-        </svg>
-      </div>
-    </span>
-  </div>
-
-  <section class="container" id="information">
-    <div class="box-container">
-      <h3 class="title disco-ball-text">Information:</h3>
-      <div class="info-container">
-        <p>
-          Hi, my name is <span class="disco-ball-text">Matthias</span>, but most people know me as <span
-            class="disco-ball-text">hernik</span>.
-          I make different kinds of software and also website back-end!
-          I've been coding for about <span class="sun-flower-text" id="years-of-coding">2 years</span> now
-          and still can't make good code.
-          Currently I mostly use <span class="disco-ball-text">JS/Node and C#</span>, but I'm also learning <span class="disco-ball-text">Python and Kotlin</span>.
-        </p>
-      </div>
-    </div>
-
-    <div class="box-container">
-      <h3 class="title disco-ball-text">Projects:</h3>
-      <div class="info-container">
-        <p><a href="https://hernikplays.cz/OcarinaPlayer/" target="_blank">Ocarina</a>, a simple music player for Windows (and maybe other OSes later).</p>
-        <p><a href="https://github.com/catgirls-top" target="_blank">Catgirls.top</a>, Another image uploader, would you look at that!</p>
-        <p><a href="https://undreamit.games" target="_blank">Undreamit</a>, my game dev studio</p>
-        <p><a href="https://catgirls-top.github.io/hyofu" target="_blank">HYOFU</a>, system for people, who want to have a nice file uploader :)</p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="center box-container primary no-border-radius">
-    <p class="no-margin">
-      <a href="https://github.com/AlexFlipnote/alexflipnote.github.io/blob/master/LICENSE" target="_blank">LICENSE</a>
-      | Website by <a href="https://alexflipnote.dev" target="_blank">AlexFlipnote</a> | Images from <a
-        href="https://unsplash.com" target="_blank">Unsplash</a> |
-      <a href="https://github.com/hernikplays/hernikplays.github.io" target="_blank">Source</a>
-    </p>
-  </footer>
-  <script>
-    let one = "mailto:"
-    let two = "hernikplays.cz"
-    let four = "contact@"
-    document.getElementById("mail").href = one + four + two
-  </script>
+    </section>
+    <script>
+        let ma = "tact@her"
+        let e = "mailto://con"
+        let il = "nikplays.cz"
+        document.getElementById("mail").setAttribute("href",e+ma+il)
+        </script>
 </body>
 
 </html>
